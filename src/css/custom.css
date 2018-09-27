@@ -1,0 +1,14 @@
+.loginRoute{
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.loginRoute .container{
+	max-width: 450px;
+}
+
+.loginRoute .flexBox{
+	padding: 40px 0;
+	min-height: 100vh;
+	box-sizing: border-box;
+}

@@ -3,14 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-brands-svg-icons": "^5.3.1",
+    "@fortawesome/free-regular-svg-icons": "^5.3.1",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "axios": "^0.18.0",
+    "dexie": "^2.0.4",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "firebase": "^5.5.0",
+    "materialize-css": "^1.0.0",
     "react": "^16.5.2",
+    "react-device-detect": "^1.5.9",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
+    "react-facebook-login": "^4.1.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run workbox",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "workbox": "workbox generateSW workbox-config.js",
+    "ssldev": "set HTTPS=true&&npm start"
   }
 }
